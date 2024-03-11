@@ -35,6 +35,7 @@ The policy (Π) is known to determine the agent’s optimal action given the cur
 Π: S –> A
 
 To determine the best policy, it is essential to define the returns that reveal the agent’s rewards at every state. As a result, the horizon method is not preferred to focus on short-term or long term-rewards. Instead, a variable termed ‘discounted factor (γ)’ is introduced. The rule says if γ has values that are closer to zero, then the immediate rewards are prioritized. Subsequently, if γ reveals values closer to one, then the focus shifts to long-term rewards. Hence, the discounted infinite-horizon method is key to revealing the best policy.
+
 ![image](https://github.com/VincentOracle/-MDP-Markov-Decision-Processes-/assets/104081669/165aa9c7-3ad6-4ac0-bcd8-c4bb0f7c286d)
 
 
@@ -45,6 +46,7 @@ The value function V(s) identifies the reward return at each specific state. Its
 
 MDP model1
 The value function can be divided into two components: the reward of the current state and the discounted reward value of the next state. This breakdown derives Bellman’s equation, as shown below:
+
 ![image](https://github.com/VincentOracle/-MDP-Markov-Decision-Processes-/assets/104081669/5af9005d-8d91-4b9d-b635-cc5dc28ed9bf)
 
 
@@ -52,6 +54,7 @@ MDP model2
 Here, it is worth noting that the agent’s actions and rewards vary based on the policy. This implies that the value function is specific to a policy.
 
 Optimal value function can be solved with the help of iterative methods such as Monte-Carlo evaluations, dynamic programming, or temporal-difference learning. The policy that chooses the maximum optimal value while considering the present state is referred to as the optimal policy. Mathematically, it is represented by the following equation:
+
 ![image](https://github.com/VincentOracle/-MDP-Markov-Decision-Processes-/assets/104081669/8e7b5f8c-7838-4c7b-bf8c-905b3deb90fd)
 
 
